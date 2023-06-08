@@ -6,7 +6,7 @@ const Weather = () => {
 
     const serachLocation = (event) => {
         if (event.key === "Enter") {
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=cf8ae067f77419c7e23fe112d35f5256`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=YOUR_API_KEY`)
                 .then(response => response.json())
                 .then((data) => {
                     setUsers(data);
